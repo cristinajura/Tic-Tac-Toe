@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: -5px;
   @media (max-width: 600px) {
     transform: scale(0.8);
   }
@@ -10,12 +11,15 @@
 #title {
   font-size: 40px;
   font-weight: 800;
+  text-shadow: 1px 1px gray;
   color: green;
   text-decoration: underline;
   margin-top: 50px;
+  margin-right: 210px;
   @media (max-width: 600px) {
     margin-top: 0px;
-   }
+    margin-right: 0;
+  }
   @media (max-height: 450px) {
     display: none;
   }
@@ -27,8 +31,8 @@
   margin-top: 40px;
   display: flex;
   @media (max-width: 600px) {
-   flex-direction: column;
-   width: 330px;
+    flex-direction: column;
+    width: 330px;
   }
   @media (max-height: 450px) {
     margin-top: 0px;
@@ -40,24 +44,65 @@
   display: inline-grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto auto;
-  margin-bottom: 10px;
+  margin-bottom: -6px;
+  box-shadow: 0 0 10px 2px rgb(160, 160, 160);
+  padding: 8px 5px;
+  border-radius: 3px;
+  background: rgb(212, 241, 212);
+  @media (max-width: 600px) {
+    margin-right: -10px;
+    margin-bottom: 20px;
+    padding-bottom: 2px;
+  }
 }
-  .buttons {
-    width: 110px;
-    height: 110px;
-    border: 1px solid gray;
-    text-align: center;
-    font-size: 50px;
-    background: #9c9;
-    margin-top: -4px;
-  }
-  .text {
-    margin: 0px 0px 10px 40px;
-  }
+.buttons {
+  width: 110px;
+  height: 110px;
+  border: 1px solid gray;
+  text-align: center;
+  font-size: 50px;
+  background: rgb(157, 204, 157);
+  margin-top: -4px;
+}
+.text {
+  margin: 50px 200px -32px 0;
+}
 
-  button {
-    margin-bottom: 3px;
-    background: #dfd;
-    font-size: 16px;
+button {
+  margin-bottom: 3px;
+  background: #dfd;
+  font-size: 16px;
+  border: 1.6px solid gray;
+}
+
+.moves {
+  margin-bottom: 2px;
+  list-style-type: none;
+}
+
+.historyBox {
+  margin-top: 0;
+  @media (max-width: 600px) {
+    margin-top: 55px;
+    margin-left: 60px;
   }
-  
+}
+
+.reload {
+  width: 40px;
+  height: 40px;
+  margin-top: 30px;
+  margin-right: 200px;
+  border: 3px solid green;
+  border-radius: 50px;
+  font-size: 40px;
+  cursor: pointer;
+  background: rgb(212, 241, 212);
+  color: rgb(56, 56, 56);
+  @media (max-width: 600px) {
+    margin-right: 0px;
+  }
+}
+.reload:hover {
+  transform: scale(1.1);
+}
